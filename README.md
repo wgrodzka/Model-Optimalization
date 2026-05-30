@@ -99,9 +99,19 @@ pip install pandas scikit-learn imbalanced-learn matplotlib seaborn numpy joblib
 
 ## Results
 
+### Performance Achieved
+- **Final Result on External Test Data**: **0.87** (Balanced Accuracy Score)
+- **Best Model Configuration**: Optimized Gradient Boosting Classifier with:
+  - RobustScaler for feature normalization
+  - SelectKBest with 40 selected features
+  - n_estimators: 500
+  - learning_rate: 0.05
+  - max_depth: 5
+  - subsample: 0.8
+
+### Output Files
 - **Predictions**: Model outputs stored in `code/artificial_prediction.txt`
 - **Performance Metrics**: Balanced accuracy scores tracked across optimization stages
-- **Best Model Configuration**: Parameters that maximize performance on the validation set
 - **Detailed Report**: See `report.pdf` for comprehensive findings and analysis
 
 ## Key Insights
@@ -119,7 +129,3 @@ Wiktoria Grodzka
 ## Notes
 
 This project uses **artificial data** for demonstration purposes. The pipeline is fully reproducible and can be adapted to real-world datasets by modifying the data loading section and adjusting parameters as needed.
-
-## License
-
-This project is educational and intended for learning purposes.
