@@ -9,14 +9,14 @@ This project demonstrates comprehensive machine learning pipeline optimization u
 ```
 Model-Optimalization/
 ├── README.md                 # Project documentation
-├── artificial_prediction.txt # Model predictions on test data
-└── [Other project files]
-
-Kody/
-├── code.ipynb               # Main Jupyter notebook with complete pipeline
-├── artificial_train_data.csv     # Training features
-├── artificial_train_labels.csv   # Training labels
-└── artificial_test_data.csv      # Test features
+├── report.pdf                # Project report and findings
+├── .git/                     # Git version control
+└── code/                     # Main project folder
+    ├── code.ipynb                      # Main Jupyter notebook with complete pipeline
+    ├── artificial_train_data.csv       # Training features
+    ├── artificial_train_labels.csv     # Training labels
+    ├── artificial_test_data.csv        # Test features
+    └── artificial_prediction.txt       # Model predictions on test data
 ```
 
 ## Key Features
@@ -90,17 +90,19 @@ pip install pandas scikit-learn imbalanced-learn matplotlib seaborn numpy joblib
 ```
 
 ### Execution
-1. Open `Kody/code.ipynb` in Jupyter Notebook or JupyterLab
-2. Execute cells sequentially from top to bottom
-3. Review interim results and score comparisons at each stage
-4. Models are evaluated on both training and test sets
-5. Predictions are generated and saved
+1. Navigate to the `code/` folder
+2. Open `code.ipynb` in Jupyter Notebook or JupyterLab
+3. Execute cells sequentially from top to bottom
+4. Review interim results and score comparisons at each stage
+5. Models are evaluated on both training and test sets
+6. Predictions are generated and saved to `artificial_prediction.txt`
 
 ## Results
 
-- **Output**: Predictions stored in `artificial_prediction.txt`
+- **Predictions**: Model outputs stored in `code/artificial_prediction.txt`
 - **Performance Metrics**: Balanced accuracy scores tracked across optimization stages
 - **Best Model Configuration**: Parameters that maximize performance on the validation set
+- **Detailed Report**: See `report.pdf` for comprehensive findings and analysis
 
 ## Key Insights
 
